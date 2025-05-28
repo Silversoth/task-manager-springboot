@@ -95,6 +95,27 @@ src/
 
 ```
 ---
+## 🌐 Endpoints Overview
+The application exposes the following routes for task management:
+```
+Method	URL	Description
+GET	/tasks	Displays the main page with the list of tasks and a form to add a new task
+POST	/tasks	Submits a new task to be saved to the database
+GET	/tasks/delete/{id}	Deletes the task with the specified id
+GET	/tasks/complete/{id}	Toggles the completion status of a task by id
+```
+---
+## 🧭 Flow Summary
+```
+1. The home page at /tasks shows all tasks and includes the form to add one.
+
+2. When a task is submitted via the form, it's sent as a POST to /tasks.
+
+3. Clicking delete triggers a GET request to /tasks/delete/{id}.
+
+4. Clicking complete triggers a GET request to /tasks/complete/{id} to toggle its status.
+```
+---
 ## 🧪 Testing
 Basic test class exists under:
 ```
