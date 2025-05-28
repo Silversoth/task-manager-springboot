@@ -1,4 +1,10 @@
 # Task Manager App📝
+![License](https://img.shields.io/github/license/Silversoth/task-manager-springboot)
+![Java](https://img.shields.io/badge/Java-17-blue?logo=java)
+![Spring Boot](https://img.shields.io/badge/Spring--Boot-2.7-green?logo=spring)
+
+
+
 
 A simple web application to manage tasks, built with **Spring Boot**, **Thymeleaf**, and **MySQL**. Users can create, view, and delete tasks through a clean HTML interface.
 
