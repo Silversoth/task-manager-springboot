@@ -11,6 +11,7 @@ A simple web application to manage tasks, built with **Spring Boot**, **Thymelea
 - ❌ Delete tasks
 - 🌐 Interactive HTML UI using Thymeleaf
 - 🧱 Built with Spring Boot (MVC architecture)
+- 🗃️ Stores data in a MySQL database
 
 ---
 
