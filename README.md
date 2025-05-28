@@ -14,6 +14,9 @@ A simple web application to manage tasks, built with **Spring Boot**, **Thymelea
 - 🗃️ Stores data in a MySQL database
 
 ---
+## 🌐 Available Languages
+[🇪🇸 Español](README.es.md)
+---
 
 ## 📸 Screenshots
 
