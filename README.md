@@ -1,1 +1,121 @@
-# task-manager-springboot
+# Task Manager App📝
+
+A simple web application to manage tasks, built with **Spring Boot**, **Thymeleaf**, and **MySQL**. Users can create, view, and delete tasks through a clean HTML interface.
+
+---
+
+## ✨ Features
+
+- ✅ Create new tasks
+- 📋 View all existing tasks
+- ❌ Delete tasks
+- 🌐 Interactive HTML UI using Thymeleaf
+- 🧱 Built with Spring Boot (MVC architecture)
+
+---
+
+## 📸 Screenshots
+
+![Screenshot](./assets/Pic1.png)
+
+---
+
+## 🛠 Technologies Used
+Java 17
+
+Spring Boot
+
+Spring MVC
+
+Thymeleaf
+
+MySQL
+
+Maven
+
+---
+
+## ▶ How to Run
+✅ Requirements
+- Java 17 or newer
+
+- MySQL running locally
+
+- Apache Maven 3.6+
+
+---
+
+🚀 Steps
+1. Clone the repository
+```
+   git clone https://github.com/Silversoth/task-manager-springboot.git
+   cd task-manager-springboot
+```
+2. Configure database connection
+Edit the file src/main/resources/application.properties and update the following values:
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+```
+3. Run the project
+```
+mvn spring-boot:run
+```
+4. Access the app in your browser
+```   
+http://localhost:8080
+```
+---
+## 📂 Project Structure
+```
+src/
+├── main/
+│   ├── java/
+│   │   └── com.github.silversoth.task_manager/
+│   │       ├── controller/       # TaskController.java
+│   │       ├── dao/              # TaskRepository.java (Spring Data JPA)
+│   │       ├── entity/           # Task.java (JPA Entity)
+│   │       └── TaskManagerApplication.java
+│   └── resources/
+│       ├── templates/            # Thymeleaf views (index.html)
+│       └── application.properties
+└── test/
+
+```
+---
+## 🧪 Testing
+Basic test class exists under:
+```
+src/test/java/com/github/silversoth/task_manager/TaskManagerApplicationTests.java
+
+```
+You can run tests with:
+```
+mvn test
+```
+
+---
+## 📄 License
+
+This project is licensed under the MIT License.
+---
+## 👤 Author
+Jonathan Hendrix
+
+[GitHub](https://github.com/Silversoth)
+
+[LinkedIn](https://www.linkedin.com/in/jonathan-hendrix-dev/?profileId=ACoAABaHN2MBCx8MlxM46klT3fXvOH9NIHW7b3I)
+
+
+
+
+
+
+
+
+
+
+
+
