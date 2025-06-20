@@ -9,7 +9,7 @@
 
 <form th:action="@{/tasks}" th:object="${task}" method="post" class="mb-3">
     <div class="input-group">
-        <input type="text" th:field="*{description}" class="form-control" placeholder="New task" required />
+            <input type="text" th:field="*{description}" class="form-control" placeholder="New task" required />
         <button type="submit" class="btn btn-primary">Add</button>
     </div>
 </form>
