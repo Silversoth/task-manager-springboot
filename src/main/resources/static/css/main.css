@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+
+
+}
+
+/* Optional: make tables responsive */
+.table-responsive {
+    overflow-x: auto;
+
+}
+
+.table {
+
+}

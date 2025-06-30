@@ -1,8 +1,8 @@
 package com.github.silversoth.task_manager.entity;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
+
+import java.util.Date;
 
 
 @Entity
@@ -10,11 +10,15 @@ public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String description;
     private boolean completed;
 
-    // Getters y setters
+    @Column(name = "created", updatable = false, insertable = false)
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date created;
+
+
+// Getters y setters
 
     public Long getId() {
         return id;
@@ -30,6 +34,14 @@ public class Task {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Date getCreated() {
+        return created;
+    }
+
+    public void setCreated(Date date) {
+        this.created = date;
     }
 
     public boolean isCompleted() {
